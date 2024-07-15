@@ -21,15 +21,17 @@
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="https://getbootstrap.com/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
     <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-    <link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
+    <link rel="manifest" href="https://getbootstrap.com/docs/5.3/assets/img/favicons/manifest.json">
     <link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
     <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
     <meta name="theme-color" content="#712cf9">
 
     <!-- custom styles for this page  -->
-    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+
   </head>
   <body class="d-flex align-items-center py-4 bg-body-tertiary">
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
@@ -80,30 +82,28 @@
 
     
 <main class="form-signin w-100 m-auto">
-  <form>
-    <img class="mb-4" src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="bootstrap-logo" width="72" height="57">
-    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+  <form action="/" method="post">
+    <img class="mb-4" src="images/profile-user_64572.png" alt="bootstrap-logo" width="72" height="72">
+    <h1 class="h3 mb-3 fw-normal">Sign up to my Newsletter!</h1>
 
     <div class="form-floating">
-      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" fdprocessedid="9z1rt">
-      <label for="floatingInput">Email address</label>
+      <input type="text" class="form-control top" id="floatingInput" placeholder="First name" fdprocessedid="9z1rt" name="first_name">
+      <label for="floatingInput">First Name</label>
     </div>
     <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Password" fdprocessedid="chxxxm">
-      <label for="floatingPassword">Password</label>
+        <input type="text" class="form-control middle" id="floatingInput" placeholder="Last name" fdprocessedid="9z1rt" name="last_name">
+        <label for="floatingInput">Last Name</label>
+      </div>
+    <div class="form-floating">
+        <input type="email" class="form-control bottom" id="floatingInput" placeholder="name@example.com" fdprocessedid="9z1rt" name="email">
+        <label for="floatingInput">Email address</label>
     </div>
 
-    <div class="form-check text-start my-3">
-      <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
-      <label class="form-check-label" for="flexCheckDefault">
-        Remember me
-      </label>
-    </div>
-    <button class="btn btn-primary w-100 py-2" type="submit" fdprocessedid="4xxhq">Sign in</button>
-    <p class="mt-5 mb-3 text-body-secondary">© 2017–2024</p>
+    <button class="btn btn-primary w-100 py-2" type="submit" fdprocessedid="4xxhq">Sign Up</button>
+    <p class="mt-5 mb-3 text-body-secondary">© BS News NewsLetter</p>
   </form>
 </main>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     
 
