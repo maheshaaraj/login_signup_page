@@ -62,8 +62,4 @@ app.listen(3000, ()=>{
 });
 
 
-// Mailchimp API key 
-// 231e39dd55cba56456e7b533ee3238f2-us22
 
-// audience id or list id
-// 5dd9661c09
