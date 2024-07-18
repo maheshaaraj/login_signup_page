@@ -28,6 +28,28 @@ app.post("/", (req, res) => {
     const firstName = req.body.first_name;
     const lastName = req.body.last_name;
     const email = req.body.email;
+
+    // mailchimp format data
+    // email_address
+    // status
+    // merge_fields
+    const data = {
+        members: [
+            {
+                email_address: email,
+                status: "subscribed",
+                merge_fields: {
+                    FNAME: firstName,
+                    LNAME: lastName
+                }
+
+            }
+        ]
+    };
+    
+    const jsonData = JSON.stringify(data);
+    console.log(jsonData);
+
     console.log("name: " + firstName + " "+ lastName +" email: " + email);
     res.write("name: " + firstName + " "+ lastName +" email: " + email);
     res.send();
@@ -38,3 +60,10 @@ app.post("/", (req, res) => {
 app.listen(3000, ()=>{
     console.log("App started on port 3000 REFRESH localhost:3000");
 });
+
+
+// Mailchimp API key 
+// 231e39dd55cba56456e7b533ee3238f2-us22
+
+// audience id or list id
+// 5dd9661c09
